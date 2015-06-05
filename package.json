@@ -10,5 +10,11 @@
     "browserify-plugin"
   ],
   "author": "Mark Miro <markmirony@gmail.com> (http://markmiro.com/)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^10.2.3",
+    "gulp": "^3.9.0",
+    "through2": "^0.6.5",
+    "vinyl": "^0.5.0"
+  }
 }
