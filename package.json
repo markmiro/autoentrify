@@ -1,0 +1,14 @@
+{
+  "name": "autoentrify",
+  "version": "1.0.0",
+  "description": "Scan HTML files to generate the list of entries for browserify",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "browserify-plugin"
+  ],
+  "author": "Mark Miro <markmirony@gmail.com> (http://markmiro.com/)",
+  "license": "ISC"
+}
