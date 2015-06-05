@@ -1,9 +1,17 @@
+// Node modules
+var path = require('path');
+
 var browserify  = require('browserify'),
     gulp = require('gulp'),
-    through2 = require('through2'),
-    vinyl = require('vinyl');
+    gutil = require('gulp-util'),
+    addSrc = require('gulp-add-src'),
+    jest = require('jest-cli'),
+    tap = require('gulp-tap');
 
+var autoEntrify = require('./index');
+
+// TODO: make this work with gulp and browserify
 gulp.task('default', function () {
-  gulp.src('test/file.html')
-    .pipe(gulp.dest('./output'));
+  autoEntrify('test/*.html');
+  return;
 });
