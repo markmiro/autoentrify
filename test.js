@@ -52,3 +52,13 @@ describe('scripts in files', function () {
     assert.deepEqual(autoEntrify('./testdir/one-script.html'), ['script1.js']);
   });
 });
+
+describe('Works with browserify', function () {
+  var browserify = require('browserify');
+  var autoEntrify = require('./index');
+  it('should be able to add entries to browserify', function () {
+    var b = browserify();
+    b.add('./testdir/script1.js');
+    b.bundle().pipe(process.stdout);
+  });
+});
